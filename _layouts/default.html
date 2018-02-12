@@ -76,22 +76,22 @@
     <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
     <script>
 $(document).ready(function(){
-        var timer;
-        var fadingIn = false;
-        $("html").mousemove(function() {
-                if (!fadingIn) {
-                        $('div.site-wrapper:visible').stop().animate({opacity: 1}, 100, function() { fadingIn = false; });
-                        fadingIn = true;
-                }
+  var timer;
+  var fadingIn = false;
+  $("html").mousemove(function() {
+    if (!fadingIn) {
+      $('div.site-wrapper:visible').stop().animate({opacity: 1}, 100, function() { fadingIn = false; });
+      fadingIn = true;
+    }
 
-                if (timer) {
-                        clearTimeout(timer);
-                }
-                timer = setTimeout(function() {
-                        fadingIn = false;
-                        $('div.site-wrapper').stop().animate({opacity: 0}, 1000);
-                }, 1000)
-        })
+    if (timer) {
+      clearTimeout(timer);
+    }
+    timer = setTimeout(function() {
+      fadingIn = false;
+      $('div.site-wrapper').stop().animate({opacity: 0}, 1000);
+    }, 1000)
+  })
 });
 
     </script>
