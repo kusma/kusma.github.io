@@ -11,11 +11,32 @@ body {
   height: 100%;
 }
 
-body {
+.heading {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0));
+}
+
+.heading,
+.landing {
   color: #fff;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
+.landing {
+  height: 100vh;
+}
+
 section {
-  height: 100vh
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 3rem);
+}
+
+i.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+}
+
+i.arrow.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
