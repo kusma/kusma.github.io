@@ -19,24 +19,26 @@
   <body>
 
     <!-- Let's be all hipster and do video! -->
-    <div class="embed-responsive position-fixed w-100 h-100" style="z-index: -99">
-      <iframe class="embed-responsive-item" src="http://www.youtube.com/embed?listType=playlist&list=PL491AFF4FFB7EE803&autoplay=1&controls=0&showinfo=0&autohide=1"></iframe>
-    </div>
-
-    <div class="row h-100 mw-100">
-      <div class="position-fixed w-100 m-2">
-        <div class="container">
-          <h3>{{ site.title | smartify }}</h3>
-        </div>
+    <section>
+      <div class="embed-responsive position-absolute w-100 h-100" style="z-index: -99">
+        <iframe class="embed-responsive-item" src="http://www.youtube.com/embed?listType=playlist&list=PL491AFF4FFB7EE803&autoplay=1&controls=0&showinfo=0&autohide=1"></iframe>
       </div>
-      <div class="container">
-        <div class="row h-100 d-flex align-items-center">
-          <div id="content-wrapper" class="my-auto text-center w-100 ">
-            {{ content }}
+
+      <div class="row h-100 mw-100">
+        <div class="position-absolute w-100 m-2">
+          <div class="container">
+            <h3>{{ site.title | smartify }}</h3>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row h-100 d-flex align-items-center">
+            <div id="content-wrapper" class="my-auto text-center w-100 ">
+              {{ content }}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
