@@ -29,14 +29,3 @@ section {
   min-height: 100vh;
   background: linear-gradient(rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 3rem);
 }
-
-i.arrow {
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-}
-
-i.arrow.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
