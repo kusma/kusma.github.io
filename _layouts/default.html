@@ -18,22 +18,22 @@
   </head>
 
   <body>
+    <div class="heading position-fixed w-100 p-2" style="z-index: 99">
+      <div class="container">
+        <h1>{{ site.title | smartify }}</h1>
+      </div>
+    </div>
 
     <!-- Let's be all hipster and do video! -->
     <section>
       <div class="embed-responsive position-absolute w-100 h-100">
         <iframe class="embed-responsive-item" src="http://www.youtube.com/embed?listType=playlist&list=PL491AFF4FFB7EE803&autoplay=1&controls=0&showinfo=0&autohide=1"></iframe>
       </div>
-      <div class="heading position-fixed w-100 p-2">
-        <div class="container">
-          <h1>{{ site.title | smartify }}</h1>
-        </div>
-      </div>
 
-      <div class="position-relative h-100 mw-100">
+      <div id="content-wrapper" class="position-relative h-100 mw-100">
         <div class="container landing">
           <div class="h-100 d-flex align-items-center">
-            <div id="content-wrapper" class="my-auto text-center w-100 ">
+            <div class="my-auto text-center w-100 ">
               {% capture landing %}{% include home/landing.md %}{% endcapture %}
               {{ landing | markdownify }}
             </div>
@@ -82,6 +82,7 @@ $(document).ready(function(){
       $content_wrapper.stop().animate({opacity: 0}, 1000);
     }, 1000)
   })
+  $content_wrapper.animate({opacity: 0}, 3000);
 });
 
 $('.smooth-scroll').click(function(event) {
