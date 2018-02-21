@@ -23,3 +23,33 @@ section {
   min-height: 100vh;
   background: linear-gradient(rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 3rem);
 }
+
+@mixin transform($transforms) {
+     -moz-transform: $transforms;
+       -o-transform: $transforms;
+      -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+          transform: $transforms;
+}
+
+@mixin animation($animation...) {
+  -o-animation: $animation;
+  -moz-animation: $animation;
+  -webkit-animation: $animation;
+  animation: $animation;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    @include transform(translateY(0));
+    opacity: 1;
+  }
+  50% {
+    @include transform(translateY(-1rem));
+    opacity: 0;
+  }
+}
+
+.bounce {
+  @include animation(bounce 1s infinite);
+}
