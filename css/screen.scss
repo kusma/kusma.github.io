@@ -24,6 +24,18 @@ body {
   height: 100vh;
 }
 
+@mixin user-select($value) {
+  -webkit-user-select: $value;
+     -moz-user-select: $value;
+      -ms-user-select: $value;
+          user-select: $value;
+}
+
+.landing * {
+  pointer-events: none;
+  @include user-select(none)
+}
+
 section {
   min-height: 100vh;
   background: linear-gradient(rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 3rem);
