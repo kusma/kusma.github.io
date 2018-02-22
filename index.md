@@ -20,7 +20,8 @@ visualization software for the Oil and Gas industry.
 
 Before that, I was one of the first employees at Falanx Microsystems (later
 aquired by ARM), where I worked on the
-[ARM Mali](https://en.wikipedia.org/wiki/Mali_(GPU)) line of GPUs.
+[ARM Mali](https://en.wikipedia.org/wiki/Mali_(GPU)) line of GPUs, with an
+emphasis on the OpenGL ES drivers.
 
 ### Demoscene
 
