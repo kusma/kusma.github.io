@@ -23,6 +23,9 @@ aquired by ARM), where I worked on the
 [ARM Mali](https://en.wikipedia.org/wiki/Mali_(GPU)) line of GPUs, with an
 emphasis on the OpenGL ES drivers.
 
+You can read more about my professional career on
+[my LinkedIn profile](https://www.linkedin.com/in/erik-faye-lund-7a87112/).
+
 ### Demoscene
 
 I'm also actively contributing to
