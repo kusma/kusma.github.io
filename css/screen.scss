@@ -42,6 +42,10 @@ section {
   background: linear-gradient(rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 3rem);
 }
 
+#video-section .bounce a {
+  display: block;
+}
+
 @mixin transform($transforms) {
      -moz-transform: $transforms;
        -o-transform: $transforms;
