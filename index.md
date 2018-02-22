@@ -1,8 +1,6 @@
 ---
 layout: default
 ---
-# Erik "kusma" Faye-Lund
-
 I'm a graphics programmer, specializing in low-level OpenGL / DirectX, and
 other GPU-related development.
 
