@@ -41,8 +41,9 @@ section {
   min-height: 100vh;
 }
 
-#video-section .bounce a {
-  display: block;
+#video-section .bounce div {
+  padding: 1em;
+  margin: -1em;
 }
 
 @mixin transform($transforms) {
