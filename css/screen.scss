@@ -21,6 +21,10 @@ header,
   pointer-events: none;
 }
 
+#content-wrapper > div > div > div {
+  pointer-events: auto;
+}
+
 .landing {
   height: 100vh;
 }
