@@ -29,17 +29,10 @@ header,
   height: 100vh;
 }
 
-@mixin user-select($value) {
-  -webkit-user-select: $value;
-     -moz-user-select: $value;
-      -ms-user-select: $value;
-          user-select: $value;
-}
-
 header,
 .landing * {
   pointer-events: none;
-  @include user-select(none)
+  user-select: none;
 }
 
 section {
@@ -51,32 +44,17 @@ section {
   margin: -1em;
 }
 
-@mixin transform($transforms) {
-     -moz-transform: $transforms;
-       -o-transform: $transforms;
-      -ms-transform: $transforms;
-  -webkit-transform: $transforms;
-          transform: $transforms;
-}
-
-@mixin animation($animation...) {
-  -o-animation: $animation;
-  -moz-animation: $animation;
-  -webkit-animation: $animation;
-  animation: $animation;
-}
-
 @keyframes bounce {
   0%, 100% {
-    @include transform(translateY(0));
+    transform: translateY(0);
     opacity: 1;
   }
   50% {
-    @include transform(translateY(-1rem));
+    transform: translateY(-1rem);
     opacity: 0;
   }
 }
 
 .bounce {
-  @include animation(bounce 1s infinite);
+  animation: bounce 1s infinite;
 }
