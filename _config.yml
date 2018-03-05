@@ -7,3 +7,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jemoji
+
+sass:
+  style: compressed
