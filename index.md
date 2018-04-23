@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 ---
 I'm a graphics programmer, specializing in low-level OpenGL / DirectX, and
 other GPU-related development.

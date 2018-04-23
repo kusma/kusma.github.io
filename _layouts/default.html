@@ -3,87 +3,8 @@
   {% include head.html %}
 
   <body>
-    <header class="fixed-top zindex-sticky w-100 p-2">
-      <div class="container">
-        <h1>{{ site.title | smartify }}</h1>
-      </div>
-    </header>
 
-    <!-- Let's be all hipster and do video! -->
-    <section id="video-section">
-      <div class="embed-responsive position-absolute mw-100 h-100">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed?listType=playlist&list=PL491AFF4FFB7EE803&autoplay=1&controls=0&showinfo=0&autohide=1&loop=1&rel=0"></iframe>
-      </div>
+    {{ content }}
 
-      <div id="content-wrapper" class="position-relative h-100 mw-100">
-        <div class="container landing">
-          <div class="h-100 d-flex align-items-center">
-            <div class="my-auto text-center w-100">
-              {% capture landing %}{% include home/landing.md %}{% endcapture %}
-              {{ landing | markdownify }}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="position-absolute bounce" style="bottom: 1rem; left: 50%; width: 2rem; margin-left: -1rem;" >
-        <a class="smooth-scroll" href="#content"><div><i class="fas fa-angle-down fa-3x text-white"></i></div></a>
-      </div>
-    </section>
-    <section id="content">
-      <div class="container pt-2">
-        <h1>{{ site.title | smartify }}</h1>
-
-        {{ content }}
-      </div>
-
-      {% include footer.html %}
-    </section>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script>
-var $header = $("header");
-var $video_section = $("#video-section");
-function updateScroll() {
-  $header.css("opacity", 1 - $(window).scrollTop() / $video_section.height());
-}
-$(window).scroll(updateScroll);
-updateScroll();
-
-$(document).ready(function(){
-  var timer;
-  var fadingIn = false;
-  var $content_wrapper = $('#content-wrapper');
-  $("html").mousemove(function() {
-    if (!fadingIn) {
-      $content_wrapper.stop().animate({opacity: 1}, 100, function() { fadingIn = false; });
-      fadingIn = true;
-    }
-
-    if (timer) {
-      clearTimeout(timer);
-    }
-    timer = setTimeout(function() {
-      fadingIn = false;
-      $content_wrapper.stop().animate({opacity: 0}, 1000);
-    }, 1000)
-  })
-  $content_wrapper.animate({opacity: 0}, 3000);
-});
-
-$('.smooth-scroll').click(function(event) {
-  if (this.hash !== "") {
-    event.preventDefault();
-    var hash = this.hash;
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 800, function(){
-      window.location.hash = hash;
-    });
-  }
-});
-    </script>
   </body>
 </html>
