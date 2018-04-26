@@ -2,3 +2,6 @@ title: Erik "kusma" Faye-Lund
 author: Erik Faye-Lund
 description: The home-page of Erik "kusma" Faye-Lund.
 markdown: kramdown
+
+plugins:
+  - jekyll-seo-tag
