@@ -71,3 +71,6 @@ You can find the source code of most of my works on
 * [Very Last Engine Ever](https://github.com/excess-demogroup/vlee): This is
   the source code of most of my demos. It's an aging code-base that uses
   DirectX 9 for rendering.
+* [Even Laster Engine](https://github.com/excess-demogroup/even-laster-engine):
+  This is a rather hacky, but new demo-engine which is the basis for my recent
+  demos. It uses Vulkan 1.0 for rendering.
