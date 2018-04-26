@@ -68,6 +68,6 @@ You can find the source code of most of my works on
   playback engine for the
   [Nintendo Game Boy Advance](https://en.wikipedia.org/wiki/Game_Boy_Advance).
   It's developed in cooperation with Jørn Nystad.
-* [Very Last Engine Ever](https://github.com/kusma/vlee): This is the source
-  code of most of my demos. It's an aging code-base that uses DirectX 9 for
-  rendering.
+* [Very Last Engine Ever](https://github.com/excess-demogroup/vlee): This is
+  the source code of most of my demos. It's an aging code-base that uses
+  DirectX 9 for rendering.
