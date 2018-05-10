@@ -10,6 +10,19 @@ other GPU-related development.
 
 ---
 
+{% if site.posts.size > 0 %}
+##### Latest [blog]({{ site.baseurl }}{% link blog.md %}) post:
+## {{ site.posts.first.title }}
+
+{{ site.posts.first.excerpt }}
+
+[Read full post]({{ site.posts.first.url }})
+
+
+---
+{% endif %}
+
+
 ## Contact
 
 If you need to reach me, please do not hesitate to contact me via e-mail at
