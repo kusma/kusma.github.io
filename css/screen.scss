@@ -7,7 +7,6 @@ body {
 
 .heading {
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0));
-  pointer-events: none;
 }
 
 header,
@@ -17,12 +16,7 @@ header,
 }
 
 #content-wrapper {
-  background-color: rgba(0,1,0,.5);
-  pointer-events: none;
-}
-
-#content-wrapper > div > div > div {
-  pointer-events: auto;
+  background-color: #000;
 }
 
 .landing {
@@ -31,12 +25,21 @@ header,
 
 header,
 .landing * {
-  pointer-events: none;
   user-select: none;
 }
 
 section {
   min-height: 100vh;
+}
+
+#video-section {
+  overflow: hidden;
+}
+
+#play-icon.hidden {
+  opacity: 0;
+  transition: all 250ms linear;
+  transform: scale(3);
 }
 
 #video-section .bounce div {

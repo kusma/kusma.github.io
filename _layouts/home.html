@@ -10,21 +10,29 @@ layout: default
 <!-- Let's be all hipster and do video! -->
 <section id="video-section">
   <div class="embed-responsive position-absolute mw-100 h-100">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed?listType=playlist&list=PL491AFF4FFB7EE803&autoplay=1&controls=0&showinfo=0&autohide=1&loop=1&rel=0"></iframe>
+    <iframe id="video" class="embed-responsive-item" src="https://www.youtube.com/embed?listType=playlist&list=PL491AFF4FFB7EE803&enablejsapi=1&controls=0&showinfo=0&autohide=1&loop=1&rel=0"></iframe>
   </div>
 
   <div id="content-wrapper" class="position-relative h-100 mw-100">
     <div class="container landing">
       <div class="h-100 d-flex align-items-center">
         <div class="my-auto text-center w-100">
-          {% capture landing %}{% include home/landing.md %}{% endcapture %}
-          {{ landing | markdownify }}
+          <div id="play-icon">
+            <i class="fas fa-play fa-3x text-white"></i>
+          </div>
+          <h1>Here, watch some of my demos</h1>
+          <p>
+          Press anywhere to start playing.
+          </p>
+          <p>
+          When you're done being entertained, click the icon below.
+          </p>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="position-absolute bounce" style="bottom: 1rem; left: 50%; width: 2rem; margin-left: -1rem;" >
+  <div id="down-arrow" class="position-absolute bounce" style="bottom: 1rem; left: 50%; width: 2rem; margin-left: -1rem;" >
     <a class="smooth-scroll" href="#content"><div><i class="fas fa-angle-down fa-3x text-white"></i></div></a>
   </div>
 </section>
@@ -39,6 +47,15 @@ layout: default
 </section>
 
 <script>
+  var tag = document.createElement('script');
+  tag.src = 'https://www.youtube.com/iframe_api';
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  var player;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('video');
+  }
   var $header = $("header");
   var $video_section = $("#video-section");
   function updateScroll() {
@@ -48,24 +65,16 @@ layout: default
   updateScroll();
 
   $(document).ready(function(){
-    var timer;
-    var fadingIn = false;
     var $content_wrapper = $('#content-wrapper');
-    $("html").mousemove(function() {
-      if (!fadingIn) {
-        $content_wrapper.stop().animate({opacity: 1}, 100, function() { fadingIn = false; });
-        fadingIn = true;
-      }
-
-      if (timer) {
-        clearTimeout(timer);
-      }
-      timer = setTimeout(function() {
-        fadingIn = false;
-        $content_wrapper.stop().animate({opacity: 0}, 1000);
-      }, 1000);
+    $content_wrapper.click(function() {
+      var $play_icon = $('#play-icon');
+      $play_icon.addClass('hidden');
+      $content_wrapper.fadeOut(1000);
+      player.playVideo();
     });
-    $content_wrapper.animate({opacity: 0}, 3000);
+    $('#down-arrow').click(function() {
+      player.pauseVideo();
+    });
   });
 
   $('.smooth-scroll').click(function(event) {
