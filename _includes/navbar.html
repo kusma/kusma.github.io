@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         {% for nav_page in site.pages %}
-        {% if nav_page.title %}
+        {% if nav_page.title != 'Home' %}
         <li class="nav-item">
           <a class="nav-link{% if page.url == nav_page.url %} active{% endif %}" href="{{ nav_page.url }}">{{ nav_page.title }}</a>
         </li>
