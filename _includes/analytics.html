@@ -1,3 +1,4 @@
+{% if jekyll.environment == "production" %}
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113419619-1"></script>
 <script>
@@ -6,3 +7,4 @@
   gtag('js', new Date());
   gtag('config', 'UA-113419619-1');
 </script>
+{% endif %}
