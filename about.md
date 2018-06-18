@@ -8,12 +8,14 @@ other GPU-related development.
 
 ### Professional
 
-I currently work at [Fusetools](https://fusetools.com), as a Principal
-Engineer, leading the development of our compiler for the
-[Uno](https://www.fusetools.com/docs/uno/uno-lang)-language (a dialect of C#).
-I'm also an active contributor to
-[fuselibs](https://github.com/fusetools/fuselibs-public), which is the core of
-our UI engine.
+I currently work at [Collabora](https://www.collabora.com), as a Principal
+Engineer.
+
+Previously, I worked at [Fusetools](https://fusetools.com), leading the
+development of our compiler for the
+[Uno](https://www.fusetools.com/docs/uno/uno-lang)-language (a dialect of C#),
+as well as [fuselibs](https://github.com/fusetools/fuselibs-public), which is
+the core of the UI engine.
 
 I've previously worked at [Hue AS](http://hue.no/), building big-scale data
 visualization software for the Oil and Gas industry.
