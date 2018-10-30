@@ -9,7 +9,7 @@ other GPU-related development.
 ### Professional
 
 I currently work at [Collabora](https://www.collabora.com), as a Principal
-Engineer.
+Engineer in the graphics team.
 
 Previously, I worked at [Fusetools](https://fusetools.com), leading the
 development of our compiler for the
@@ -17,8 +17,8 @@ development of our compiler for the
 as well as [fuselibs](https://github.com/fusetools/fuselibs-public), which is
 the core of the UI engine.
 
-I've previously worked at [Hue AS](http://hue.no/), building big-scale data
-visualization software for the Oil and Gas industry.
+I've also previously worked at [Hue AS](http://hue.no/), building big-scale
+data visualization software for the Oil and Gas industry.
 
 Before that, I was one of the first employees at Falanx Microsystems (later
 aquired by ARM), where I worked on the
@@ -34,8 +34,7 @@ I'm also actively contributing to
 [Demoscene](https://en.wikipedia.org/wiki/Demoscene) productions, in particular
 under the label [Excess](http://www.pouet.net/groups.php?which=1360). The other
 currently active half of Excess is
-[Bent "gloom" Stamnes](https://twitter.com/gloom303), whom I also happen to work
-with in my day-job.
+[Bent "gloom" Stamnes](https://twitter.com/gloom303).
 
 I've made [a lot](http://www.pouet.net/user.php?who=1383&show=credits) of demos,
 and some other notable labels I've released under are:
