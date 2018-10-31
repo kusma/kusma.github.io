@@ -35,6 +35,9 @@ a Vulkan driver is available.
     color: white;
     background: #5c3dcc;
   }
+  .blue .blue {
+    border: 2px solid #43c200;
+  }
   svg path {
     stroke: currentColor;
     stroke-width: 5;
@@ -45,7 +48,7 @@ a Vulkan driver is available.
     <div class="box blue">Application</div>
     <center><svg height="1em" viewbox="-5 -5 30 30"><path d="M0 10l10 10M20 10l-10 10M10 0v20"/></svg></center>
     <div class="box blue" style="padding: 5px">Mesa
-      <div class="box" style="border: 2px solid #43c200">Gallium OpenGL State Tracker</div>
+      <div class="box blue">Gallium OpenGL State Tracker</div>
       <div style="font-size: 1rem; width: 50%">
         <center><svg height="1em" viewbox="-5 -5 30 30"><path d="M0 10l10 10M20 10l-10 10M10 0v20"/></svg></center>
         <div class="box" style="background: #43c200; color: black">Zink</div>
