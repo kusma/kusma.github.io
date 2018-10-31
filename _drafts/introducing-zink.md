@@ -22,6 +22,8 @@ a Vulkan driver is available.
   <figcaption>glxgears on Zink</figcaption>
 </figure>
 
+Here's an overview of how this fits into the Mesa architecture, for those unfamiliar with it:
+
 <figure>
   <style>
   .box {
