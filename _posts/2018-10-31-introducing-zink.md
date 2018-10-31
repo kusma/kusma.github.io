@@ -259,7 +259,7 @@ But OK, I will say this: I currently get around 475 FPS on glxgears on top of
 Zink on my system. The i965 driver gives me around 1750 FPS. *Don't read too
 much into those results, though*; glxgears isn't a good benchmark. But for
 that particular workload, we're about a quarter of the performance. As I said,
-I don't think glxgears is a very good benchmark, but it's the only think
+I don't think glxgears is a very good benchmark, but it's the only thing
 *somewhat* reproducible that I've run so far, so it's the only numbers I have.
 I'll certainly be doing some proper benchmarking in the future.
 
