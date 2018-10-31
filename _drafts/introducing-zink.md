@@ -329,7 +329,7 @@ $ <span class="input">LIBGL_DRIVERS_PATH=/tmp/zink/lib64/dri/ MESA_LOADER_DRIVER
 GL_RENDERER   = zink (Intel(R) UHD Graphics 620 (Kabylake GT2))
 GL_VERSION    = 2.1 Mesa 18.3.0-devel (git-395b12c2d7)
 GL_VENDOR     = Collabora Ltd
-GL_EXTENSIONS = GL_ARB_multisample GL_EXT_abgr ...
+GL_EXTENSIONS = GL_ARB_multisample GL_EXT_abgr <span class="etc">...</span>
 </pre>
 
 ### Submitting patches
