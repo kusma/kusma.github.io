@@ -19,7 +19,7 @@ OpenGL implementation in Mesa to provide hardware accelerated OpenGL when only
 a Vulkan driver is available.
 
 <figure>
-  <img src="{{site.url}}/assets/zink-gears.png" alt="glxgears on Zink">
+  <img style="max-width: 100%" src="{{site.url}}/assets/zink-gears.png" alt="glxgears on Zink">
   <figcaption>glxgears on Zink</figcaption>
 </figure>
 
@@ -158,22 +158,22 @@ Here's some screenshots of applications and games we've tested that renders
 more or less correctly:
 
 <figure>
-  <img src="{{site.url}}/assets/zink-openarena.png" alt="OpenArena on Zink">
+  <img style="max-width: 100%" src="{{site.url}}/assets/zink-openarena.png" alt="OpenArena on Zink">
   <figcaption>OpenArena on Zink</figcaption>
 </figure>
 
 <figure>
-  <img src="{{site.url}}/assets/zink-weston.png" alt="Weston on Zink">
+  <img style="max-width: 100%" src="{{site.url}}/assets/zink-weston.png" alt="Weston on Zink">
   <figcaption>Weston on Zink</figcaption>
 </figure>
 
 <figure>
-  <img src="{{site.url}}/assets/zink-quake3.png" alt="Quake 3 on Zink">
+  <img style="max-width: 100%" src="{{site.url}}/assets/zink-quake3.png" alt="Quake 3 on Zink">
   <figcaption>Quake 3 on Zink</figcaption>
 </figure>
 
 <figure>
-  <img src="{{site.url}}/assets/zink-etr.png" alt="Extreme Tux Racer on Zink">
+  <img style="max-width: 100%" src="{{site.url}}/assets/zink-etr.png" alt="Extreme Tux Racer on Zink">
   <figcaption>Extreme Tux Racer on Zink</figcaption>
 </figure>
 
