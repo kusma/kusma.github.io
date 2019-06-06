@@ -31,11 +31,11 @@ Here's an overview of how this fits into the Mesa architecture, for those unfami
     <svg style="height: 1rem;" viewbox="-5 -5 30 30"><path style="stroke: currentColor; stroke-width: 5; stroke-linecap: round;" d="M0 10l10 10M20 10l-10 10M10 0v20"/></svg>
     <div style="border-radius: 4px; overflow: hidden; text-overflow: ellipsis; font-size: 1.25rem; color: white; background: #5c3dcc; padding: 5px">Mesa
       <div style="border-radius: 4px; overflow: hidden; text-overflow: ellipsis; font-size: 1.25rem; color: white; background: #5c3dcc; box-shadow: inset 0px 0px 0px 2px #43c200;">Gallium OpenGL State Tracker</div>
-      <div style="font-size: 1rem; width: 50%; padding-right: 2.5px; float: left;">
+      <div style="font-size: 1rem; box-sizing: border-box; width: 50%; padding-right: 2.5px; float: left;">
         <svg style="height: 1rem;" viewbox="-5 -5 30 30"><path style="stroke: currentColor; stroke-width: 5; stroke-linecap: round;" d="M0 10l10 10M20 10l-10 10M10 0v20"/></svg>
         <div style="border-radius: 4px; overflow: hidden; text-overflow: ellipsis; font-size: 1.25rem; background: #43c200; color: black">Zink</div>
       </div>
-      <div style="font-size: 1rem; width: 50%; padding-left: 2.5px; float: left;">
+      <div style="font-size: 1rem; box-sizing: border-box; width: 50%; padding-left: 2.5px; float: right;">
         <svg style="height: 1rem;" viewbox="-5 -5 30 30"><path style="stroke: currentColor; stroke-width: 5; stroke-linecap: round;" d="M0 10l10 10M20 10l-10 10M10 0v20"/></svg>
         <div style="border-radius: 4px; overflow: hidden; text-overflow: ellipsis; font-size: 1.25rem; color: white; background: #5c3dcc; box-shadow: inset 0px 0px 0px 2px #43c200;">Other Gallium drivers</div>
       </div>
