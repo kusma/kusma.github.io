@@ -284,7 +284,7 @@ environment variable to force the `zink`-driver. From here you should be able
 to run many OpenGL applications using Zink.
 
 Here's a rough recipe:
-<pre style="border-radius: 3px; background-color: #111; color: #999;">
+<pre style="border-radius: 3px; background-color: #111; color: #999; padding: 0.25rem;">
 $ <span style="color: #fff;">git clone https://gitlab.freedesktop.org/kusma/mesa.git mesa-zink</span>
 Cloning into 'mesa-zink'...
 <span style="color: #555;">...</span>
