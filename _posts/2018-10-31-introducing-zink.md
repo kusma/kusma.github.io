@@ -26,44 +26,23 @@ a Vulkan driver is available.
 Here's an overview of how this fits into the Mesa architecture, for those unfamiliar with it:
 
 <figure>
-  <style>
-  .box {
-    border-radius: 4px;
-    text-align: center;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 1.25rem;
-  }
-  .blue {
-    color: white;
-    background: #5c3dcc;
-  }
-  .blue .blue {
-    box-shadow: inset 0px 0px 0px 2px #43c200;
-  }
-  svg path {
-    stroke: currentColor;
-    stroke-width: 5;
-    stroke-linecap: round;
-  }
-  </style>
-  <div class="zink-diagram">
-    <div class="box blue">Application</div>
-    <center><svg height="1em" viewbox="-5 -5 30 30"><path d="M0 10l10 10M20 10l-10 10M10 0v20"/></svg></center>
-    <div class="box blue" style="padding: 5px">Mesa
-      <div class="box blue">Gallium OpenGL State Tracker</div>
+  <div>
+    <div style="border-radius: 4px; text-align: center; overflow: hidden; text-overflow: ellipsis; font-size: 1.25rem; color: white; background: #5c3dcc;">Application</div>
+    <center><svg height="1em" viewbox="-5 -5 30 30"><path style="stroke: currentColor; stroke-width: 5; stroke-linecap: round;" d="M0 10l10 10M20 10l-10 10M10 0v20"/></svg></center>
+    <div style="border-radius: 4px; text-align: center; overflow: hidden; text-overflow: ellipsis; font-size: 1.25rem; color: white; background: #5c3dcc; padding: 5px">Mesa
+      <div style="border-radius: 4px; text-align: center; overflow: hidden; text-overflow: ellipsis; font-size: 1.25rem; color: white; background: #5c3dcc; box-shadow: inset 0px 0px 0px 2px #43c200;">Gallium OpenGL State Tracker</div>
       <div style="font-size: 1rem; width: 50%; padding-right: 2.5px; float: left;">
-        <center><svg height="1em" viewbox="-5 -5 30 30"><path d="M0 10l10 10M20 10l-10 10M10 0v20"/></svg></center>
-        <div class="box" style="background: #43c200; color: black">Zink</div>
+        <center><svg height="1em" viewbox="-5 -5 30 30"><path style="stroke: currentColor; stroke-width: 5; stroke-linecap: round;" d="M0 10l10 10M20 10l-10 10M10 0v20"/></svg></center>
+        <div style="border-radius: 4px; text-align: center; overflow: hidden; text-overflow: ellipsis; font-size: 1.25rem; background: #43c200; color: black">Zink</div>
       </div>
       <div style="font-size: 1rem; width: 50%; padding-left: 2.5px; float: left;">
-        <center><svg height="1em" viewbox="-5 -5 30 30"><path d="M0 10l10 10M20 10l-10 10M10 0v20"/></svg></center>
-        <div class="box blue">Other Gallium drivers</div>
+        <center><svg height="1em" viewbox="-5 -5 30 30"><path style="stroke: currentColor; stroke-width: 5; stroke-linecap: round;" d="M0 10l10 10M20 10l-10 10M10 0v20"/></svg></center>
+        <div style="border-radius: 4px; text-align: center; overflow: hidden; text-overflow: ellipsis; font-size: 1.25rem; color: white; background: #5c3dcc; box-shadow: inset 0px 0px 0px 2px #43c200;">Other Gallium drivers</div>
       </div>
     </div>
     <div style="width: 50%">
-    <center><svg height="1em" viewbox="-5 -5 30 30"><path d="M0 10l10 10M20 10l-10 10M10 0v20"/></svg></center>
-    <div class="box blue">Vulkan</div>
+    <center><svg height="1em" viewbox="-5 -5 30 30"><path style="stroke: currentColor; stroke-width: 5; stroke-linecap: round;" d="M0 10l10 10M20 10l-10 10M10 0v20"/></svg></center>
+    <div style="border-radius: 4px; text-align: center; overflow: hidden; text-overflow: ellipsis; font-size: 1.25rem; color: white; background: #5c3dcc;">Vulkan</div>
     </div>
   </div>
   <figcaption>Architectural overview</figcaption>
@@ -305,41 +284,28 @@ environment variable to force the `zink`-driver. From here you should be able
 to run many OpenGL applications using Zink.
 
 Here's a rough recipe:
-<style>
-.console {
-  border-radius: 3px;
-  background-color: #111;
-  color: #999;
-}
-.console .input {
-  color: #fff;
-}
-.console .etc {
-  color: #555;
-}
-</style>
-<pre class="console">
-$ <span class="input">git clone https://gitlab.freedesktop.org/kusma/mesa.git mesa-zink</span>
+<pre style="border-radius: 3px; background-color: #111; color: #999;">
+$ <span style="color: #fff;">git clone https://gitlab.freedesktop.org/kusma/mesa.git mesa-zink</span>
 Cloning into 'mesa-zink'...
-<span class="etc">...</span>
+<span style="color: #555;">...</span>
 Checking out files: 100% (5982/5982), done.
-$ <span class="input">cd mesa-zink</span>
-$ <span class="input">git checkout zink</span>
+$ <span style="color: #fff;">cd mesa-zink</span>
+$ <span style="color: #fff;">git checkout zink</span>
 Branch 'zink' set up to track remote branch 'zink' from 'origin'.
 Switched to a new branch 'zink'
-$ <span class="input">meson --prefix=/tmp/zink -Dgallium-drivers=zink build-zink</span>
+$ <span style="color: #fff;">meson --prefix=/tmp/zink -Dgallium-drivers=zink build-zink</span>
 The Meson build system
-<span class="etc">...</span>
+<span style="color: #555;">...</span>
 Found ninja-X.Y.Z at /usr/bin/ninja
-$ <span class="input">ninja -C build-zink install</span>
+$ <span style="color: #fff;">ninja -C build-zink install</span>
 ninja: Entering directory &#x60;build-zink'
-<span class="etc">...</span>
+<span style="color: #555;">...</span>
 installing /home/kusma/temp/mesa-zink/build-zink/src/gallium/targets/dri/libgallium_dri.so to /tmp/zink/lib64/dri/zink_dri.so
-$ <span class="input">LIBGL_DRIVERS_PATH=/tmp/zink/lib64/dri/ MESA_LOADER_DRIVER_OVERRIDE=zink glxgears -info</span>
+$ <span style="color: #fff;">LIBGL_DRIVERS_PATH=/tmp/zink/lib64/dri/ MESA_LOADER_DRIVER_OVERRIDE=zink glxgears -info</span>
 GL_RENDERER   = zink (Intel(R) UHD Graphics 620 (Kabylake GT2))
 GL_VERSION    = 2.1 Mesa 18.3.0-devel (git-395b12c2d7)
 GL_VENDOR     = Collabora Ltd
-GL_EXTENSIONS = GL_ARB_multisample GL_EXT_abgr <span class="etc">...</span>
+GL_EXTENSIONS = GL_ARB_multisample GL_EXT_abgr <span style="color: #555;">...</span>
 </pre>
 
 ### Submitting patches
