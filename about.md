@@ -9,7 +9,8 @@ other GPU-related development.
 ### Professional
 
 I currently work at [Collabora](https://www.collabora.com), as a Principal
-Engineer in the graphics team.
+Engineer in the graphics team. Most of my work currently evolve around
+[Mesa](https://www.mesa3d.org).
 
 Previously, I worked at [Fusetools](https://fusetools.com), leading the
 development of our compiler for the
